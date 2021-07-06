@@ -34,7 +34,7 @@ function recup(){
     id++
     tabUser.push(user)
     let mySection = document.createElement("section");
-    mySection.classList.add("w-full", "grid", "grid-cols-5", "place-items-center", "bg-gray-200", "animation");
+    mySection.classList.add("w-full", "grid", "xl:grid-cols-5", "place-items-center", "bg-gray-200", "animation");
     document.getElementById("list").appendChild(mySection);
     let tabList = [id, user.name, user.prenom, user.age]
     for(let i = 0; i < tabList.length; i++){
@@ -44,7 +44,6 @@ function recup(){
     }
     let myDivButton = document.createElement("div")
     mySection.appendChild(myDivButton)
-    mySection.style.backgroundColor = '#e5e8eb';
     let myButton = document.createElement("button");
     myButton.textContent = "X";
     myDivButton.appendChild(myButton);

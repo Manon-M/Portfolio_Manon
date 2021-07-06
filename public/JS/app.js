@@ -120,7 +120,6 @@ sections.forEach(function (section){
     section.classList.add('not-visible')
     observer.observe(section)
 })
-console.log(sections)
 //changement d'images caroussel
 let imageOne = document.getElementById('imageOne');
 let littleOne = document.getElementById('littleOne');
