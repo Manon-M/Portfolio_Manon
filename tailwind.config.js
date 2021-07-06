@@ -19,6 +19,7 @@ module.exports = {
         '36.5' : '138px',
         '39' : '156px',
         '45' : '185px',
+        '85' : '345px',
       },
       fontFamily: {
         nunito: ['Nunito'],

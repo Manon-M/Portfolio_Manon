@@ -102,14 +102,14 @@ buttonMusic.addEventListener('click', (e)=>{
 //Animation section au scroll
 let observer = new IntersectionObserver(function (entries){
     entries.forEach(function(entry){
-        if(entry.intersectionRatio > 0.5){
+        if(entry.intersectionRatio > 0.2){
             entry.target.classList.remove('not-visible')
             entry.target.classList.add('showSection')
             observer.unobserve(entry.target)
         }
     })
 }, {
-    threshold: [0.5]
+    threshold: [0.2]
 })
 
 

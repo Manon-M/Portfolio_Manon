@@ -25,7 +25,7 @@
                 <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg> 
         </div>  
-        <nav class="col-span-3 xl:col-span-2 flex flex-col items-center xl:block xl:flex-row text-white hidden w-full bg-blueHeader p-4 absolute xl:static xl:p-0 -bottom-72 xl:space-x-6 space-y-6 xl:space-y-0 mt-8 xl:mt-0 text-2xl z-10" id="menu">
+        <nav class="col-span-3 xl:col-span-2 flex flex-col items-center xl:block xl:flex-row text-white hidden w-full bg-blueHeader p-4 absolute xl:static xl:p-0 -bottom-85 xl:space-x-6 space-y-6 xl:space-y-0 mt-8 xl:mt-0 text-2xl z-10" id="menu">
             <a class="hover:text-red-400" href="#compet"><span>Compétences</span></a>
             <a class="hover:text-red-400" href="#projets"><span>Projets</span></a>
             <a class="hover:text-red-400" href="#caroussel"><span>Illustrator & Photoshop</span></a>
@@ -255,7 +255,7 @@
         <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat">Illustrator & Photoshop</h1>
         <section class="mt-12 flex flex-col items-center" id="caroussel">
             <div class="flex flex-col items-center">
-                <img class="w-97 cursor-pointer myImages hover:opacity-70" src="./img/Geisha.png" alt="Projet Illustrator Japon Geisha" id="illustratorOne">
+                <img class="w-full md:w-97 cursor-pointer myImages hover:opacity-70" src="./img/Geisha.png" alt="Projet Illustrator Japon Geisha" id="illustratorOne">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-6 mt-4">
                     <img class="object-cover w-52 h-28.5 cursor-pointer" src="./img/Months.png" alt="Projet Illustrator Montagne" id="illustratorTwo">
                     <img class="object-cover w-52 h-28.5 cursor-pointer" src="./img/paysage.png" alt="Projet Illustrator Paysage" id="illustratorThree">
@@ -263,7 +263,7 @@
                 </div>
             </div>
             <div class="flex flex-col items-center my-20">
-                    <img class="object-cover w-97 md:h-96.5 cursor-pointer myImages hover:opacity-70" src="./img/Couv_Portfolio.png" alt="Projet Photoshop Montage photo road amérique voiture" id="imageOne">
+                    <img class="object-cover w-full md:w-97 md:h-96.5 cursor-pointer myImages hover:opacity-70" src="./img/Couv_Portfolio.png" alt="Projet Photoshop Montage photo road amérique voiture" id="imageOne">
                 <div class="grid md:grid-cols-2 gap-6 mt-4">
                     <img class="object-cover w-52 h-36 cursor-pointer" src="./img/Japon.jpg" alt="Projet Photoshop Montage photo Japon" id="littleOne">
                     <img class="object-cover w-52 h-36 cursor-pointer" src="./img/Baby_Hat.jpg" alt="Projet Photoshop photo montage bébé chapeau" id="littleTwo">    
@@ -368,6 +368,29 @@
         (function(){
             emailjs.init("user_3g1HEWFDvqbWfscACxdI5");
         })();
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyChjA2m5_cxLsv7yvLnjlJ4DGnCeHKtxhE",
+        authDomain: "portfolio-manon-michas.firebaseapp.com",
+        projectId: "portfolio-manon-michas",
+        storageBucket: "portfolio-manon-michas.appspot.com",
+        messagingSenderId: "788767566706",
+        appId: "1:788767566706:web:247cbfefce953c3de28beb",
+        measurementId: "G-50MZ2ZSZQR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
     </script>
 </body>
 </html>

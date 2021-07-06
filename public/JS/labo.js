@@ -1,3 +1,25 @@
+//burger menu
+let buttonOpen = document.getElementById('open');
+let buttonclose = document.getElementById('close');
+let menu = document.getElementById('menu');
+
+buttonOpen.addEventListener('click', ()=>{
+    if(menu.classList.contains('hidden')){
+        menu.classList.remove('hidden')
+        buttonOpen.classList.add('hidden')
+        buttonclose.classList.remove('hidden')
+        menu.classList.add('fadeOutDown')
+    }
+})
+
+buttonclose.addEventListener('click', ()=>{
+    menu.classList.add('hidden')
+    buttonclose.classList.add('hidden')
+    buttonOpen.classList.remove('hidden')
+    menu.classList.remove('fadeOutDown')
+    menu.classList.add('fadeOutUp')
+})
+
 let tabUser = [];
 let id = 0;
 

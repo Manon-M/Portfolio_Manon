@@ -605,8 +605,8 @@ video {
 	left: 0px;
 	right: 0px;
 }
-.-bottom-72{
-	bottom: -18rem;
+.-bottom-85{
+	bottom: -345px;
 }
 .top-0{
 	top: 0px;
@@ -1333,6 +1333,10 @@ video {
 
 	.md\:w-96{
 		width: 24rem;
+	}
+
+	.md\:w-97{
+		width: 600px;
 	}
 
 	.md\:w-3\/5{
