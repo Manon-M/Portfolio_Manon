@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Portfolio - Manon Michas</title>
+
+    <meta name="title" content="Portfolio - Manon Michas">
+    <meta name="description" content="Bienvenue sur mon portfolio, vous retrouverez ici mes projets réalisés, mes compétences et bien d'autres choses intéressantes me concernant !">
+</head>
+<body>
+    <header class="relative bg-blueHeader grid grid-cols-3 place-items-center p-5 font-caveat" id="top">
+        <div class="col-span-2 xl:col-span-1">
+            <h1 class="text-2xl md:text-5xl text-white"><a class="hover:text-red-400" href="./index.html">Portfolio - Manon Michas</a></h1>
+        </div>
+        <div class="xl:hidden text-white place-self-end" id="open">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="hidden text-white place-self-end" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor" >
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg> 
+        </div>  
+        <nav class="col-span-3 xl:col-span-2 flex flex-col items-center xl:block xl:flex-row text-white hidden w-full bg-blueHeader p-4 absolute xl:static xl:p-0 -bottom-72 xl:space-x-6 space-y-6 xl:space-y-0 mt-8 xl:mt-0 text-2xl z-10" id="menu">
+            <a class="hover:text-red-400" href="#compet"><span>Compétences</span></a>
+            <a class="hover:text-red-400" href="#projets"><span>Projets</span></a>
+            <a class="hover:text-red-400" href="#caroussel"><span>Illustrator & Photoshop</span></a>
+            <a class="hover:text-red-400" href="#adobeXD"><span>Adobe XD</span></a>
+            <a class="hover:text-red-400" href="#contact"><span>Contact</span></a>
+            <a class="hover:text-red-400" href="./labo.html"><span>Laboratoire JS<svg class="inline-block w-8 ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.34 512"><path d="M453.83,94.85a86.4,86.4,0,0,0-13.31-14.56,59.48,59.48,0,0,1,16.62.22,7.5,7.5,0,0,0,7.42-11.8C422.21,10.57,372.28-.75,337.94,0,301.34.85,269.88,15.42,256,26.65,242.12,15.42,210.66.85,174.07,0,139.7-.74,89.79,10.57,47.44,68.71a7.5,7.5,0,0,0,7.42,11.8,59,59,0,0,1,16.64-.23A86.15,86.15,0,0,0,58.17,94.85C45.72,111.94,31.92,143.6,36.86,197.34a7.5,7.5,0,0,0,14.28,2.45c2.46-5.33,8.21-10.49,14.26-14.26-5.6,14.35-8.4,35,4.09,62.83a7.5,7.5,0,0,0,14-.84c1.83-5.87,7.19-15.14,14.44-16.58,8.28-1.65,17.64,7.13,24,14.78a7.5,7.5,0,0,0,5.76,2.69H384.29a7.49,7.49,0,0,0,5.76-2.69c6.38-7.65,15.73-16.43,24-14.78,7.25,1.44,12.61,10.71,14.44,16.58a7.5,7.5,0,0,0,6.71,5.26h.45a7.49,7.49,0,0,0,6.84-4.43c12.48-27.86,9.69-48.48,4.08-62.83,6.06,3.77,11.81,8.93,14.27,14.26a7.5,7.5,0,0,0,14.28-2.45C480.09,143.6,466.28,111.94,453.83,94.85Z" transform="translate(-35.83 0)" style="fill:#f0eeee"/><path d="M453.83,94.85a86.4,86.4,0,0,0-13.31-14.56,59.48,59.48,0,0,1,16.62.22,7.5,7.5,0,0,0,7.42-11.8C422.21,10.57,372.28-.75,337.94,0q-5.52.12-10.86.65c32.61,3.24,73.74,19,109.48,68a7.49,7.49,0,0,1-7.42,11.79,59.87,59.87,0,0,0-16.62-.21,86.4,86.4,0,0,1,13.31,14.56c11.58,15.89,24.32,44.39,22.07,91.51,5.56,3.68,10.68,8.48,13,13.43a7.5,7.5,0,0,0,14.28-2.45C480.09,143.6,466.28,111.94,453.83,94.85Z" transform="translate(-35.83 0)" style="fill:#d9d4d4"/><path d="M447.14,197.34a7.5,7.5,0,0,1-14.28,2.45c-2.46-5.33-8.21-10.49-14.27-14.26,4.59,11.75,7.29,27.7,1.27,48.39,4.27,3.57,7.35,9.43,8.65,13.6a7.5,7.5,0,0,0,6.71,5.26h.45a7.49,7.49,0,0,0,6.84-4.43c11.57-25.82,10-45.42,5.26-59.58Q447.53,193,447.14,197.34Z" transform="translate(-35.83 0)" style="fill:#d9d4d4"/><rect x="187.17" y="296" width="66" height="55" style="fill:#fa9e3e"/><path d="M308.93,359H305.6v-4.3a11.18,11.18,0,0,0-11.16-11.15H217.56a11.18,11.18,0,0,0-11.16,11.16V359h-3.33a83,83,0,0,0-82.86,82.86V504.5a7.5,7.5,0,0,0,7.5,7.5H384.29a7.5,7.5,0,0,0,7.5-7.5V441.81A83,83,0,0,0,308.93,359Z" transform="translate(-35.83 0)" style="fill:#484655"/><path d="M125.84,214h49.37V270.6H125.84a28.31,28.31,0,1,1,0-56.61Z" transform="translate(-35.83 0)" style="fill:#fa9e3e"/><path d="M386.16,214H336.79V270.6h49.37a28.31,28.31,0,1,0,0-56.61Z" transform="translate(-35.83 0)" style="fill:#fa9e3e"/><path d="M368.11,150.06v69.29c0,62.13-50.83,113.89-113,113.44A112.11,112.11,0,0,1,143.89,220.68V150.06a56.06,56.06,0,0,1,107.48-22.34,5.07,5.07,0,0,0,4.63,3.07h0a5.07,5.07,0,0,0,4.63-3.07,56.05,56.05,0,0,1,107.48,22.34Z" transform="translate(-35.83 0)" style="fill:#ffb56b"/><path d="M364.71,130.79A56.06,56.06,0,0,0,312.06,94a57.17,57.17,0,0,0-9.22.76c18,3.34,32.78,17.35,38.9,36a61.82,61.82,0,0,1,3,19.27v69.29c0,59.82-42.22,110-95,113.26,1.8.1,3.6.16,5.42.18,62.12.45,113-51.31,113-113.44V150.06A56,56,0,0,0,364.71,130.79Z" transform="translate(-35.83 0)" style="fill:#ef9245"/><path d="M310.32,203a7.5,7.5,0,0,1-7.5-7.5v-2a7.5,7.5,0,1,1,15,0v2A7.49,7.49,0,0,1,310.32,203Z" transform="translate(-35.83 0)" style="fill:#19303f"/><path d="M201.68,203a7.49,7.49,0,0,1-7.5-7.5v-2a7.5,7.5,0,1,1,15,0v2A7.5,7.5,0,0,1,201.68,203Z" transform="translate(-35.83 0)" style="fill:#19303f"/><path d="M275.15,220.12a38.47,38.47,0,0,0-19.15,5,38.47,38.47,0,0,0-19.15-5,38.84,38.84,0,0,0-35.47,54.69,7.18,7.18,0,0,0,11.72,2.06,59.57,59.57,0,0,1,85.8,0,7.21,7.21,0,0,0,5.17,2.19,7.42,7.42,0,0,0,1.24-.11,7.19,7.19,0,0,0,5.32-4.14,38.86,38.86,0,0,0-35.48-54.69Z" transform="translate(-35.83 0)" style="fill:#f0eeee"/><path d="M196.9,361.58a7.53,7.53,0,0,0-6-1.74,82.87,82.87,0,0,0-70.7,82V504.5a7.5,7.5,0,0,0,7.5,7.5H192a7.5,7.5,0,0,0,7.5-7.5V367.26A7.52,7.52,0,0,0,196.9,361.58Z" transform="translate(-35.83 0)" style="fill:#cff4ff"/><path d="M320,367.26a75.38,75.38,0,0,1,64.29,74.55V504.5H320Z" transform="translate(-35.83 0)" style="fill:#cff4ff"/><path d="M371.44,387.42a82.89,82.89,0,0,0-50.35-27.58,7.51,7.51,0,0,0-8.59,7.42V504.5A7.5,7.5,0,0,0,320,512h64.29a7.5,7.5,0,0,0,7.5-7.5V441.81A82.81,82.81,0,0,0,371.44,387.42Z" transform="translate(-35.83 0)" style="fill:#cff4ff"/><path d="M371.44,387.42a82.89,82.89,0,0,0-50.35-27.58,7.51,7.51,0,0,0-6,1.75,7.2,7.2,0,0,0-1.74,2.22,82.83,82.83,0,0,1,54.93,78V504.5a7.5,7.5,0,0,1-7.5,7.5h23.5a7.5,7.5,0,0,0,7.5-7.5V441.81A82.81,82.81,0,0,0,371.44,387.42Z" transform="translate(-35.83 0)" style="fill:#ade0f3"/><path d="M354,433.08,364.8,422.3a7.48,7.48,0,0,0,1.33-8.8l-24.22-45.8a7.54,7.54,0,0,0-4-3.52,82.41,82.41,0,0,0-7.91-2.5h0l-.25-.06-1-.26-1-.24c-.55-.13-1.09-.25-1.64-.36l-.4-.09c-1.53-.32-3.05-.59-4.59-.82l-.21,0c-2.75-.39-5.55-.66-8.38-.78V512h16.34a7.5,7.5,0,0,0,6.47-3.69l30.65-52a7.48,7.48,0,0,0-.52-8.38Z" transform="translate(-35.83 0)" style="fill:#e6faff"/><path d="M190.91,359.84a82.79,82.79,0,0,0-16.81,4.34,7.53,7.53,0,0,0-4,3.52l-24.22,45.79a7.49,7.49,0,0,0,1.33,8.81L158,433.08l-11.42,14.85a7.5,7.5,0,0,0-.52,8.38l30.66,52a7.48,7.48,0,0,0,6.46,3.69H199.5V359a79.23,79.23,0,0,0-8.21.77Z" transform="translate(-35.83 0)" style="fill:#e6faff"/></svg></span></a>
+        </nav>    
+    </header>
+    <div class="w-11/12 md:w-4/5 flex flex-col justify-center mx-auto my-8">
+        <div class="grid xl:grid-cols-4">
+            <div class="place-self-center">
+                <img class="object-cover w-44 h-44 rounded-full" src="./img/Manon.jpg" alt="Photo Manon Michas">
+            </div>
+            <div class="mt-6 xl:col-span-3 relative">
+                <div class="absolute top-0 left-0 hidden xl:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 text-blueHeader" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
+                </div>
+                <div class="break-All mt-8 xl:mx-24">
+                    <h1 class="text-3xl font-bold text-green-800 text-center mb-3 font-caveat">Pourquoi le développement web ?</h1>
+                    <p class="text-blueHeader text-justify">Je suis actuellement en reconversion professionnelle dans le développement, pourquoi ? Je suis issue du milieu de la restauration, pendant la crise du COVID, j'étais gérante d'un petit restaurant sur la commune de Castanet-Tolosan et nous avions décidé de vendre. Par chance, ce fût le cas rapidement mais le deuxième confinement a sonné et tous les restaurants étaient de nouveau fermés. J'y ai vu là une chance d'en profiter pour me reconvertir, j'étais lasse de la restauration, je ne me sentais plus épanouie. 
+                    Je suis de nature très curieuse, dans mon entourage, quelques personnes travaillant dans ce domaine m'ont donné envie de me renseigner, j'ai été conquise par le développement front-end et j'ai décidé de commencer à me former toute seule sur le HTML et le CSS tout en cherchant une formation en parallèle. En quelques semaines à peine après le début de mes recherches, j'ai eu la chance de recevoir un appel de l'Adrar pour me dire que des places s'étaient libérés pour la formation Webdesigner & Développement Front-end, j'ai passé les test et j'ai été acceptée, c'était le début d'une toute nouvelle aventure pour moi !
+                    Aujourd'hui je souhaite poursuivre dans cette voie, la formation initiale étant très portée sur le Webdesign, je n'ai pas acquis assez d'expériences en développement pour pouvoir prétendre trouver un travail en CDI dans une entreprise. C'est pour cela que je cherche à poursuivre mes études dans une formation spécialisée en développement pour la rentrée Septembre 2021. </p>
+                </div>
+                <div class="absolute bottom-0 right-0 hidden xl:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 text-blueHeader" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z"/></svg>
+                </div>
+            </div>
+        </div>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-16 mx-auto">
+        <div class="mt-16">
+            <h2 class="text-red-400 text-center text-3xl md:text-6xl font-caveat">Et si... vous jouiez tout en apprenant à me connaître ?</h2>
+            <div class="mt-10 grid place-items-center text-blueHeader">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-32" viewBox="0 0 512 671"><g id="Capa_1" data-name="Capa 1"><path d="M400,436.72V645.28a18.22,18.22,0,0,1-18.22,18.22H130.22A18.22,18.22,0,0,1,112,645.28V436.72a18.22,18.22,0,0,1,18.22-18.22H381.78A18.22,18.22,0,0,1,400,436.72Z" style="fill:#ee8e3e"/><path d="M172.48,626a18.22,18.22,0,0,1-18.22-18.22V418.5h-24A18.22,18.22,0,0,0,112,436.72V645.28a18.22,18.22,0,0,0,18.22,18.22H381.78A18.22,18.22,0,0,0,400,645.28V626Z" style="fill:#ea8032"/><path d="M370,454.49v173a6,6,0,0,1-6,6H148a6,6,0,0,1-6-6v-173a6,6,0,0,1,6-6H364A6,6,0,0,1,370,454.49Z" style="fill:#f8d46e"/><path d="M247.64,614.68A83.68,83.68,0,0,1,164,531V448.5H148a6,6,0,0,0-6,6v173a6,6,0,0,0,6,6H364a6,6,0,0,0,6-6V614.69H247.64Z" style="fill:#f9bd38"/><path d="M310.5,485.26v46.53a11.63,11.63,0,0,1-6.17,10.27l-35.88,19.09v6.5a3.09,3.09,0,0,1-3.09,3.09H248.27a3.1,3.1,0,0,1-3.09-3.09V554.16a11.65,11.65,0,0,1,6.17-10.27l35.89-19.09V496.89H231.76v17.67a2.91,2.91,0,0,1-2.91,2.91H211.41a2.91,2.91,0,0,1-2.91-2.91v-29.3a11.63,11.63,0,0,1,11.63-11.63h78.74A11.63,11.63,0,0,1,310.5,485.26Z" style="fill:#e0b13b"/><path d="M268.5,595.33v15.34a4.33,4.33,0,0,1-4.34,4.33H249.53a4.34,4.34,0,0,1-4.35-4.33V595.33a4.34,4.34,0,0,1,4.35-4.33h14.63A4.33,4.33,0,0,1,268.5,595.33Z" style="fill:#e0b13b"/><path d="M381.78,411H130.22a25.75,25.75,0,0,0-25.72,25.72V645.28A25.75,25.75,0,0,0,130.22,671H381.78a25.75,25.75,0,0,0,25.72-25.72V436.72A25.75,25.75,0,0,0,381.78,411ZM392.5,645.28A10.73,10.73,0,0,1,381.78,656H130.22a10.73,10.73,0,0,1-10.72-10.72V436.72A10.73,10.73,0,0,1,130.22,426H381.78a10.73,10.73,0,0,1,10.72,10.72V645.28Z"/><path d="M370,441H142a7.5,7.5,0,0,0-7.5,7.5v116a7.5,7.5,0,0,0,15,0V456h213V626h-213V594.5a7.5,7.5,0,0,0-15,0v39A7.5,7.5,0,0,0,142,641H370a7.5,7.5,0,0,0,7.5-7.5v-185A7.5,7.5,0,0,0,370,441Z"/><circle cx="347.5" cy="472" r="9"/><circle cx="166.5" cy="472" r="9"/><circle cx="347.5" cy="610" r="9"/><circle cx="166.5" cy="610" r="9"/><path d="M276,565.65l31.9-17A19.09,19.09,0,0,0,318,531.79V485.26a19.15,19.15,0,0,0-19.13-19.13H220.13A19.15,19.15,0,0,0,201,485.26v29.3A10.42,10.42,0,0,0,211.41,525h17.44a10.42,10.42,0,0,0,10.41-10.41V504.39h40.48v15.9l-31.91,17a19.09,19.09,0,0,0-10.15,16.89v13.49a10.6,10.6,0,0,0,10.59,10.59h17.09A10.6,10.6,0,0,0,276,567.65v-2Zm-11-11.13a7.52,7.52,0,0,0-4,6.62v2.1h-8.27v-9.08a4.13,4.13,0,0,1,2.19-3.65l35.89-19.09a7.5,7.5,0,0,0,4-6.62V496.89a7.5,7.5,0,0,0-7.5-7.5H231.76a7.5,7.5,0,0,0-7.5,7.5V510H216V485.26a4.14,4.14,0,0,1,4.13-4.13h78.74a4.14,4.14,0,0,1,4.13,4.13v46.53a4.13,4.13,0,0,1-2.19,3.65Z"/><path d="M264.11,583.5H249.52a11.85,11.85,0,0,0-11.84,11.83v15.34a11.85,11.85,0,0,0,11.84,11.83h14.59A11.85,11.85,0,0,0,276,610.67V595.33A11.85,11.85,0,0,0,264.11,583.5Zm-3.16,24h-8.27v-9H261Z"/></g>
+                    <g id="star"><path d="M189,207.85a2.79,2.79,0,0,1-.51,5.16c-9.94,3-17,10.1-21,21.47a2.78,2.78,0,0,1-5.18.12c-4.14-10.31-11.89-17.17-22.75-21.08a2.77,2.77,0,0,1-.31-5.1,48.1,48.1,0,0,0,23-22.95,2.77,2.77,0,0,1,5,.14C171.32,195.48,178.69,202.81,189,207.85Z" style="fill:#7ccafd"/><path d="M137,220.58c9.1,3.27,15.1,8.77,18.32,16.82a10.17,10.17,0,0,0,9.51,6.42h.23a10.18,10.18,0,0,0,9.47-6.83c3.16-9,8.43-14.45,16.12-16.79a10.32,10.32,0,0,0,7.32-9.08,10.18,10.18,0,0,0-5.69-10h0c-8.86-4.34-14.79-10.36-18.13-18.39a10.27,10.27,0,0,0-18.74-.49,40.52,40.52,0,0,1-19.49,19.45A10.27,10.27,0,0,0,137,220.58Zm27.49-24.14a49.2,49.2,0,0,0,13,13.3A37.41,37.41,0,0,0,164.53,223a42.58,42.58,0,0,0-13.91-12.62A54.57,54.57,0,0,0,164.49,196.44Z"/><rect width="512" height="152" style="fill:#fff"/></g>
+                    <g id="pieceOne"><path d="M380.49,180.26a46.89,46.89,0,0,0-33.24-13.76h-25.5v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,380.49,180.26Z" style="fill:#ffb90b"/><path d="M369,213.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M338.5,275.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,275,213.5v30a47,47,0,0,0,85.67,26.71A46.77,46.77,0,0,1,338.5,275.76Z" style="fill:#f9df5d"/><path d="M336,212v35a14,14,0,0,1-28,0V212a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M322,298h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,347,159H322a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,322,298Zm-39.5-84.5a39.5,39.5,0,0,1,78.56-5.89,7.5,7.5,0,0,0,14.84-2.22,54.1,54.1,0,0,0-13.38-28.21,39.55,39.55,0,0,1,24,36.32v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,376.5,243.5v-7a7.5,7.5,0,0,0-15,0v7a39.5,39.5,0,0,1-79,0Z"/><path d="M322,268.5A21.52,21.52,0,0,0,343.5,247V212a21.5,21.5,0,0,0-43,0v35A21.52,21.52,0,0,0,322,268.5ZM315.5,212a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g>
+                    <g id="pieceTwo"><path d="M222.74,284.26A46.89,46.89,0,0,0,189.5,270.5H164v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,222.74,284.26Z" style="fill:#ffb90b"/><path d="M211,317.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M180.5,379.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,117,317.5v30a47,47,0,0,0,85.67,26.71A46.89,46.89,0,0,1,180.5,379.76Z" style="fill:#f9df5d"/><path d="M178,316v35a14,14,0,0,1-28,0V316a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M164,402h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,189,263H164a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,164,402Zm64.5-84.5v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,218.5,347.5v-30a54.31,54.31,0,0,0-13.86-36.27A39.56,39.56,0,0,1,228.5,317.5Zm-104,0a39.5,39.5,0,0,1,79,0v30a39.5,39.5,0,0,1-79,0Z"/><path d="M164,372.5A21.53,21.53,0,0,0,185.5,351V316a21.5,21.5,0,0,0-43,0v35A21.53,21.53,0,0,0,164,372.5ZM157.5,316a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g></svg>
+                </div>
+                <div class="text-center text-blueHeader mt-6">
+                    <h3 class="text-xl font-bold">Arriverez-vous à tous les trouver ?</h3>
+                    <p>Pour rendre la lecture de ce portfolio plus sympa, je vous invite à jouer à ce petit jeu, retrouver ce petit SVG cacher un peu partout sur le site. Si vous ne le faites pas, c'est pas grave mais ça sera beaucoup moins fun ! 
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center mt-6">
+                <h3 class="text-center font-bold text-lg mb-6 text-blueHeader">Sinon, vous pouvez vous détendre en musique !</h3>
+                <div>
+                    <audio src="./music/Tyler Bryant & The Shakedown - The Wayside (Live From The Beast).mp3" controls preload="auto">Sacrilège, votre navigateur ne supporte pas la balise audio !</audio>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center lg:items-start mt-16">
+            <div class="w-11/12 xl:w-3/5">
+                <button class="w-full bg-yellow-500 text-white text-xl text-left p-5 rounded-md cursor-default" disabled>Mon parcours</button>
+                <div class="md:ml-8 w-full md:w-4/5 flex flex-col mt-3">
+                    <button class="hover:bg-green-800 w-full flex justify-between bg-blueHeader text-white text-xl text-left p-3 rounded-md" id="formation">
+                        Mes formations
+                        <svg id="open-formation" xmlns="http://www.w3.org/2000/svg" class="inline-block w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        <svg id="close-formation" xmlns="http://www.w3.org/2000/svg" class="inline-block hidden w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="flex flex-col my-5 hidden" id="text-formation">
+                        <div>
+                            <h1 class="md:text-3xl text-xl text-green-800 text-center font-bold">Webdesigner & Développement Front-end</h1>
+                            <h3 class="md:text-2xl text-lg text-blueHeader text-center">Adrar Pôle Numérique - Ramonville-St-Agnes</h3>
+                            <p class="text-center text-blueHeader"><span class="font-bold">2020 - 2021 -</span>Titre professionnel de niveau 5.</p>
+                            <p class="text-justify lg:text-center">Durant cette formation, j'ai appris ce qu'était le métier de Webdesigner, j'ai appris à utiliser la suite Adobe avec les logiciels Illustrator, Photoshop, Adobe XD, After Effect & In Design. J'ai également pu apprendre l'utilisation du CMS Wordpress. Il y avait également une partie développement front où j'ai appris les langages HTML / CSS / Javascript ainsi que les framework Bootstrap et Tailwind CSS. J'ai également abordé l'UX/UI ainsi que le SEO et une petite partie community management pour gérer les réseaux sociaux.
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <h1 class="md:text-3xl text-xl text-green-800 text-center font-bold">BEP Service et Commercialisation en Restauration</h1>
+                            <h3 class="md:text-2xl text-lg text-blueHeader text-center">Lycée des Métiers de l'Hôtellerie et du Toursime - Toulouse</h3>
+                            <p class="text-blueHeader text-center"><span class="font-bold">2014 -</span>Diplôme passé en candidature libre.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:ml-8 w-full md:w-4/5 flex flex-col mt-3">
+                    <button class="hover:bg-green-800 w-full flex justify-between bg-blueHeader text-white text-xl text-left p-3 rounded-md" id="experience">
+                        Mes expériences professionnelles
+                        <svg id="open-exp" xmlns="http://www.w3.org/2000/svg" class="inline-block w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        <svg id="close-exp" xmlns="http://www.w3.org/2000/svg" class="inline-block hidden w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="flex flex-col my-5 hidden" id="text-experience">
+                        <div class="flex flex-col items-center">
+                            <h1 class="md:text-3xl text-xl text-green-800 text-center font-bold">Stage - Toundrafol</h1>
+                            <h3 class="md:text-2xl text-lg text-blueHeader text-center">Toulouse</h3>
+                            <span class="text-blueHeader font-bold">Avril 2021 - Juin 2021</span>
+                            <p class="text-justify">Durant ce stage, je devais réaliser le maquettage et l'intégration front d'un site E-commerce dans une équipe de développeurs web. Les technologies utilisées sont Tailwind CSS pour le front, et laravel pour le back-end.</p>
+                        </div>
+                        <div class="flex flex-col items-center mt-5">
+                            <h1 class="md:text-3xl text-xl text-green-800 text-center font-bold">Directrice Générale - La Grignotte</h1>
+                            <h3 class="md:text-2xl text-lg text-blueHeader text-center">Castanet-Tolosan</h3>
+                            <span class="text-blueHeader font-bold">Janvier 2018 - Août 2020</span>
+                            <p class="text-justify">Suite à un projet personnel, j'ai pu crée mon entreprise de restauration rapide "La Grignotte" sur la commune de Castanet-Tolosan. J'y ai beaucoup appris sur la gestion d'une entreprise, l'organisation, la gestion des réseaux sociaux, la création de flyers pour faire de la publicité ect..</p>
+                        </div>
+                        <div class="flex flex-col items-center mt-5">
+                            <h1 class="md:text-3xl text-xl text-green-800 text-center font-bold">Serveuse - La Table d'Auzeville</h1>
+                            <h3 class="md:text-2xl text-lg text-blueHeader text-center">Auzeville-Tolosane</h3>
+                            <span class="text-blueHeader font-bold">Mai 2013 - Avril 2017</span>
+                            <p class="text-justify">Service dans un restaurant traditionnel français, mes missions étaient de servir, prendre les commandes, encaisser, clôturer la caisse, service et réalisation des boissons, remettre la salle en état, nettoyer les tables ect...
+                                <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-9" viewBox="0 0 512 671"><g id="Capa_1" data-name="Capa 1"><path d="M400,436.72V645.28a18.22,18.22,0,0,1-18.22,18.22H130.22A18.22,18.22,0,0,1,112,645.28V436.72a18.22,18.22,0,0,1,18.22-18.22H381.78A18.22,18.22,0,0,1,400,436.72Z" style="fill:#ee8e3e"/><path d="M172.48,626a18.22,18.22,0,0,1-18.22-18.22V418.5h-24A18.22,18.22,0,0,0,112,436.72V645.28a18.22,18.22,0,0,0,18.22,18.22H381.78A18.22,18.22,0,0,0,400,645.28V626Z" style="fill:#ea8032"/><path d="M370,454.49v173a6,6,0,0,1-6,6H148a6,6,0,0,1-6-6v-173a6,6,0,0,1,6-6H364A6,6,0,0,1,370,454.49Z" style="fill:#f8d46e"/><path d="M247.64,614.68A83.68,83.68,0,0,1,164,531V448.5H148a6,6,0,0,0-6,6v173a6,6,0,0,0,6,6H364a6,6,0,0,0,6-6V614.69H247.64Z" style="fill:#f9bd38"/><path d="M310.5,485.26v46.53a11.63,11.63,0,0,1-6.17,10.27l-35.88,19.09v6.5a3.09,3.09,0,0,1-3.09,3.09H248.27a3.1,3.1,0,0,1-3.09-3.09V554.16a11.65,11.65,0,0,1,6.17-10.27l35.89-19.09V496.89H231.76v17.67a2.91,2.91,0,0,1-2.91,2.91H211.41a2.91,2.91,0,0,1-2.91-2.91v-29.3a11.63,11.63,0,0,1,11.63-11.63h78.74A11.63,11.63,0,0,1,310.5,485.26Z" style="fill:#e0b13b"/><path d="M268.5,595.33v15.34a4.33,4.33,0,0,1-4.34,4.33H249.53a4.34,4.34,0,0,1-4.35-4.33V595.33a4.34,4.34,0,0,1,4.35-4.33h14.63A4.33,4.33,0,0,1,268.5,595.33Z" style="fill:#e0b13b"/><path d="M381.78,411H130.22a25.75,25.75,0,0,0-25.72,25.72V645.28A25.75,25.75,0,0,0,130.22,671H381.78a25.75,25.75,0,0,0,25.72-25.72V436.72A25.75,25.75,0,0,0,381.78,411ZM392.5,645.28A10.73,10.73,0,0,1,381.78,656H130.22a10.73,10.73,0,0,1-10.72-10.72V436.72A10.73,10.73,0,0,1,130.22,426H381.78a10.73,10.73,0,0,1,10.72,10.72V645.28Z"/><path d="M370,441H142a7.5,7.5,0,0,0-7.5,7.5v116a7.5,7.5,0,0,0,15,0V456h213V626h-213V594.5a7.5,7.5,0,0,0-15,0v39A7.5,7.5,0,0,0,142,641H370a7.5,7.5,0,0,0,7.5-7.5v-185A7.5,7.5,0,0,0,370,441Z"/><circle cx="347.5" cy="472" r="9"/><circle cx="166.5" cy="472" r="9"/><circle cx="347.5" cy="610" r="9"/><circle cx="166.5" cy="610" r="9"/><path d="M276,565.65l31.9-17A19.09,19.09,0,0,0,318,531.79V485.26a19.15,19.15,0,0,0-19.13-19.13H220.13A19.15,19.15,0,0,0,201,485.26v29.3A10.42,10.42,0,0,0,211.41,525h17.44a10.42,10.42,0,0,0,10.41-10.41V504.39h40.48v15.9l-31.91,17a19.09,19.09,0,0,0-10.15,16.89v13.49a10.6,10.6,0,0,0,10.59,10.59h17.09A10.6,10.6,0,0,0,276,567.65v-2Zm-11-11.13a7.52,7.52,0,0,0-4,6.62v2.1h-8.27v-9.08a4.13,4.13,0,0,1,2.19-3.65l35.89-19.09a7.5,7.5,0,0,0,4-6.62V496.89a7.5,7.5,0,0,0-7.5-7.5H231.76a7.5,7.5,0,0,0-7.5,7.5V510H216V485.26a4.14,4.14,0,0,1,4.13-4.13h78.74a4.14,4.14,0,0,1,4.13,4.13v46.53a4.13,4.13,0,0,1-2.19,3.65Z"/><path d="M264.11,583.5H249.52a11.85,11.85,0,0,0-11.84,11.83v15.34a11.85,11.85,0,0,0,11.84,11.83h14.59A11.85,11.85,0,0,0,276,610.67V595.33A11.85,11.85,0,0,0,264.11,583.5Zm-3.16,24h-8.27v-9H261Z"/></g>
+                                <g><path d="M189,207.85a2.79,2.79,0,0,1-.51,5.16c-9.94,3-17,10.1-21,21.47a2.78,2.78,0,0,1-5.18.12c-4.14-10.31-11.89-17.17-22.75-21.08a2.77,2.77,0,0,1-.31-5.1,48.1,48.1,0,0,0,23-22.95,2.77,2.77,0,0,1,5,.14C171.32,195.48,178.69,202.81,189,207.85Z" style="fill:#7ccafd"/><path d="M137,220.58c9.1,3.27,15.1,8.77,18.32,16.82a10.17,10.17,0,0,0,9.51,6.42h.23a10.18,10.18,0,0,0,9.47-6.83c3.16-9,8.43-14.45,16.12-16.79a10.32,10.32,0,0,0,7.32-9.08,10.18,10.18,0,0,0-5.69-10h0c-8.86-4.34-14.79-10.36-18.13-18.39a10.27,10.27,0,0,0-18.74-.49,40.52,40.52,0,0,1-19.49,19.45A10.27,10.27,0,0,0,137,220.58Zm27.49-24.14a49.2,49.2,0,0,0,13,13.3A37.41,37.41,0,0,0,164.53,223a42.58,42.58,0,0,0-13.91-12.62A54.57,54.57,0,0,0,164.49,196.44Z"/><rect width="512" height="152" style="fill:#fff"/></g>
+                                <g><path d="M380.49,180.26a46.89,46.89,0,0,0-33.24-13.76h-25.5v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,380.49,180.26Z" style="fill:#ffb90b"/><path d="M369,213.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M338.5,275.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,275,213.5v30a47,47,0,0,0,85.67,26.71A46.77,46.77,0,0,1,338.5,275.76Z" style="fill:#f9df5d"/><path d="M336,212v35a14,14,0,0,1-28,0V212a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M322,298h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,347,159H322a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,322,298Zm-39.5-84.5a39.5,39.5,0,0,1,78.56-5.89,7.5,7.5,0,0,0,14.84-2.22,54.1,54.1,0,0,0-13.38-28.21,39.55,39.55,0,0,1,24,36.32v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,376.5,243.5v-7a7.5,7.5,0,0,0-15,0v7a39.5,39.5,0,0,1-79,0Z"/><path d="M322,268.5A21.52,21.52,0,0,0,343.5,247V212a21.5,21.5,0,0,0-43,0v35A21.52,21.52,0,0,0,322,268.5ZM315.5,212a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g>
+                                <g><path d="M222.74,284.26A46.89,46.89,0,0,0,189.5,270.5H164v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,222.74,284.26Z" style="fill:#ffb90b"/><path d="M211,317.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M180.5,379.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,117,317.5v30a47,47,0,0,0,85.67,26.71A46.89,46.89,0,0,1,180.5,379.76Z" style="fill:#f9df5d"/><path d="M178,316v35a14,14,0,0,1-28,0V316a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M164,402h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,189,263H164a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,164,402Zm64.5-84.5v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,218.5,347.5v-30a54.31,54.31,0,0,0-13.86-36.27A39.56,39.56,0,0,1,228.5,317.5Zm-104,0a39.5,39.5,0,0,1,79,0v30a39.5,39.5,0,0,1-79,0Z"/><path d="M164,372.5A21.53,21.53,0,0,0,185.5,351V316a21.5,21.5,0,0,0-43,0v35A21.53,21.53,0,0,0,164,372.5ZM157.5,316a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g></svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 w-11/12 xl:w-3/5 xl:place-self-end flex flex-col items-center xl:items-end">
+                <span class="w-full bg-green-800 rounded-md text-white text-xl text-right p-5">Mes centres d'intérêts</span>
+                <div class="md:mr-8 w-full md:w-4/5 flex flex-col mt-3">
+                    <button class="hover:bg-yellow-500 w-full flex justify-between items-center bg-blueHeader text-white text-xl text-right p-3 rounded-md" id="game">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-6 text-white" viewBox="0 0 24 24"><path d="M8 10.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5 1.5.673 1.5 1.5zm16 6.216c0 1.587-.56 2.591-1.749 3.179-.143.071-.296.105-.449.105-.242 0-.482-.087-.672-.255l-3.109-2.745c-.558-.494-1.044-1.004-2.404-1.004h-7.233c-1.36 0-1.847.51-2.404 1.004l-3.11 2.745c-.188.168-.429.255-.672.255-.152 0-.307-.034-.449-.105-1.189-.588-1.749-1.592-1.749-3.178 0-2.062.945-5.461 2.681-9.857.822-2.083 2.292-2.86 3.695-2.86.656 0 1.298.17 1.853.456 2.424 1.249 5.17 1.223 7.544 0 .553-.286 1.195-.456 1.851-.456 1.403 0 2.874.777 3.696 2.86 1.735 4.395 2.68 7.794 2.68 9.856zm-15-6.216c0-1.381-1.119-2.5-2.5-2.5s-2.5 1.119-2.5 2.5 1.119 2.5 2.5 2.5 2.5-1.119 2.5-2.5zm4-2.5c0-.552-.447-1-1-1s-1 .448-1 1 .447 1 1 1 1-.448 1-1zm3.5 2.5c0-.415-.336-.75-.75-.75s-.75.335-.75.75.336.75.75.75.75-.335.75-.75zm1.75 1.75c0-.415-.336-.75-.75-.75s-.75.335-.75.75.336.75.75.75.75-.335.75-.75zm0-3.531c0-.415-.336-.75-.75-.75s-.75.335-.75.75.336.75.75.75.75-.336.75-.75zm1.734 1.781c0-.415-.336-.75-.75-.75s-.75.335-.75.75.336.75.75.75.75-.335.75-.75z"/></svg>
+                        Les jeux vidéos                       
+                    </button>
+                    <div class="flex flex-col my-5 hidden" id="text-game">
+                        <h1 class="font-bold text-xl md:text-3xl text-green-800 text-center">Mais dis-donc, à quoi tu joues, toi ?</h2>
+                        <p class="text-justify">Les jeux-vidéos...une grande passion pour moi ! Depuis que je suis toute petite, les jeux vidéos m'ont toujours intriguée, intéressée et fascinée. J'ai très longtemps joué (environ 10ans avec quelques pauses) au magnifique MMORPG "World Of Warcraft" qui reste aujourd'hui selon moi, un des meilleurs jeux auquel j'ai pu joué durant ces années, aujourd'hui la communauté ne me tente plus, je m'en suis détournée ! J'ai également joué quelques années à AION, très bon jeu également, malheureusement j'ai arrêté de jouer quand ils ont rendu tous les serveurs de jeu en PVP (moi qui ai une sainte horreur du PVP, j'ai été servie !). J'ai enssuite testé quelques jeux gratuit : Perfect World, Rappelz (ce dernier est un pay to win, donc j'ai vite arrêté) pour finir sur Final Fantasy 14, qui m'a vite lassé donc je n'y ai joué que quelques mois... </p>
+                        <p class="text-justify">Aujourd'hui, je suis passée sur la Switch, j'ai délaissé l'ordinateur pour la manette ! J'ai retrouvé mon copain moustachu <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-9" viewBox="0 0 512 671"><g id="Capa_1" data-name="Capa 1"><path d="M400,436.72V645.28a18.22,18.22,0,0,1-18.22,18.22H130.22A18.22,18.22,0,0,1,112,645.28V436.72a18.22,18.22,0,0,1,18.22-18.22H381.78A18.22,18.22,0,0,1,400,436.72Z" style="fill:#ee8e3e"/><path d="M172.48,626a18.22,18.22,0,0,1-18.22-18.22V418.5h-24A18.22,18.22,0,0,0,112,436.72V645.28a18.22,18.22,0,0,0,18.22,18.22H381.78A18.22,18.22,0,0,0,400,645.28V626Z" style="fill:#ea8032"/><path d="M370,454.49v173a6,6,0,0,1-6,6H148a6,6,0,0,1-6-6v-173a6,6,0,0,1,6-6H364A6,6,0,0,1,370,454.49Z" style="fill:#f8d46e"/><path d="M247.64,614.68A83.68,83.68,0,0,1,164,531V448.5H148a6,6,0,0,0-6,6v173a6,6,0,0,0,6,6H364a6,6,0,0,0,6-6V614.69H247.64Z" style="fill:#f9bd38"/><path d="M310.5,485.26v46.53a11.63,11.63,0,0,1-6.17,10.27l-35.88,19.09v6.5a3.09,3.09,0,0,1-3.09,3.09H248.27a3.1,3.1,0,0,1-3.09-3.09V554.16a11.65,11.65,0,0,1,6.17-10.27l35.89-19.09V496.89H231.76v17.67a2.91,2.91,0,0,1-2.91,2.91H211.41a2.91,2.91,0,0,1-2.91-2.91v-29.3a11.63,11.63,0,0,1,11.63-11.63h78.74A11.63,11.63,0,0,1,310.5,485.26Z" style="fill:#e0b13b"/><path d="M268.5,595.33v15.34a4.33,4.33,0,0,1-4.34,4.33H249.53a4.34,4.34,0,0,1-4.35-4.33V595.33a4.34,4.34,0,0,1,4.35-4.33h14.63A4.33,4.33,0,0,1,268.5,595.33Z" style="fill:#e0b13b"/><path d="M381.78,411H130.22a25.75,25.75,0,0,0-25.72,25.72V645.28A25.75,25.75,0,0,0,130.22,671H381.78a25.75,25.75,0,0,0,25.72-25.72V436.72A25.75,25.75,0,0,0,381.78,411ZM392.5,645.28A10.73,10.73,0,0,1,381.78,656H130.22a10.73,10.73,0,0,1-10.72-10.72V436.72A10.73,10.73,0,0,1,130.22,426H381.78a10.73,10.73,0,0,1,10.72,10.72V645.28Z"/><path d="M370,441H142a7.5,7.5,0,0,0-7.5,7.5v116a7.5,7.5,0,0,0,15,0V456h213V626h-213V594.5a7.5,7.5,0,0,0-15,0v39A7.5,7.5,0,0,0,142,641H370a7.5,7.5,0,0,0,7.5-7.5v-185A7.5,7.5,0,0,0,370,441Z"/><circle cx="347.5" cy="472" r="9"/><circle cx="166.5" cy="472" r="9"/><circle cx="347.5" cy="610" r="9"/><circle cx="166.5" cy="610" r="9"/><path d="M276,565.65l31.9-17A19.09,19.09,0,0,0,318,531.79V485.26a19.15,19.15,0,0,0-19.13-19.13H220.13A19.15,19.15,0,0,0,201,485.26v29.3A10.42,10.42,0,0,0,211.41,525h17.44a10.42,10.42,0,0,0,10.41-10.41V504.39h40.48v15.9l-31.91,17a19.09,19.09,0,0,0-10.15,16.89v13.49a10.6,10.6,0,0,0,10.59,10.59h17.09A10.6,10.6,0,0,0,276,567.65v-2Zm-11-11.13a7.52,7.52,0,0,0-4,6.62v2.1h-8.27v-9.08a4.13,4.13,0,0,1,2.19-3.65l35.89-19.09a7.5,7.5,0,0,0,4-6.62V496.89a7.5,7.5,0,0,0-7.5-7.5H231.76a7.5,7.5,0,0,0-7.5,7.5V510H216V485.26a4.14,4.14,0,0,1,4.13-4.13h78.74a4.14,4.14,0,0,1,4.13,4.13v46.53a4.13,4.13,0,0,1-2.19,3.65Z"/><path d="M264.11,583.5H249.52a11.85,11.85,0,0,0-11.84,11.83v15.34a11.85,11.85,0,0,0,11.84,11.83h14.59A11.85,11.85,0,0,0,276,610.67V595.33A11.85,11.85,0,0,0,264.11,583.5Zm-3.16,24h-8.27v-9H261Z"/></g>
+                        <g><path d="M189,207.85a2.79,2.79,0,0,1-.51,5.16c-9.94,3-17,10.1-21,21.47a2.78,2.78,0,0,1-5.18.12c-4.14-10.31-11.89-17.17-22.75-21.08a2.77,2.77,0,0,1-.31-5.1,48.1,48.1,0,0,0,23-22.95,2.77,2.77,0,0,1,5,.14C171.32,195.48,178.69,202.81,189,207.85Z" style="fill:#7ccafd"/><path d="M137,220.58c9.1,3.27,15.1,8.77,18.32,16.82a10.17,10.17,0,0,0,9.51,6.42h.23a10.18,10.18,0,0,0,9.47-6.83c3.16-9,8.43-14.45,16.12-16.79a10.32,10.32,0,0,0,7.32-9.08,10.18,10.18,0,0,0-5.69-10h0c-8.86-4.34-14.79-10.36-18.13-18.39a10.27,10.27,0,0,0-18.74-.49,40.52,40.52,0,0,1-19.49,19.45A10.27,10.27,0,0,0,137,220.58Zm27.49-24.14a49.2,49.2,0,0,0,13,13.3A37.41,37.41,0,0,0,164.53,223a42.58,42.58,0,0,0-13.91-12.62A54.57,54.57,0,0,0,164.49,196.44Z"/><rect width="512" height="152" style="fill:#fff"/></g>
+                        <g><path d="M380.49,180.26a46.89,46.89,0,0,0-33.24-13.76h-25.5v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,380.49,180.26Z" style="fill:#ffb90b"/><path d="M369,213.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M338.5,275.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,275,213.5v30a47,47,0,0,0,85.67,26.71A46.77,46.77,0,0,1,338.5,275.76Z" style="fill:#f9df5d"/><path d="M336,212v35a14,14,0,0,1-28,0V212a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M322,298h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,347,159H322a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,322,298Zm-39.5-84.5a39.5,39.5,0,0,1,78.56-5.89,7.5,7.5,0,0,0,14.84-2.22,54.1,54.1,0,0,0-13.38-28.21,39.55,39.55,0,0,1,24,36.32v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,376.5,243.5v-7a7.5,7.5,0,0,0-15,0v7a39.5,39.5,0,0,1-79,0Z"/><path d="M322,268.5A21.52,21.52,0,0,0,343.5,247V212a21.5,21.5,0,0,0-43,0v35A21.52,21.52,0,0,0,322,268.5ZM315.5,212a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g>
+                        <g><path d="M222.74,284.26A46.89,46.89,0,0,0,189.5,270.5H164v124h25.5a47,47,0,0,0,47-47v-30A46.89,46.89,0,0,0,222.74,284.26Z" style="fill:#ffb90b"/><path d="M211,317.5v30a47,47,0,0,1-94,0v-30a47,47,0,1,1,94,0Z" style="fill:#ffea6e"/><path d="M180.5,379.76a47,47,0,0,1-47-47v-30a46.79,46.79,0,0,1,8.33-26.71A47,47,0,0,0,117,317.5v30a47,47,0,0,0,85.67,26.71A46.89,46.89,0,0,1,180.5,379.76Z" style="fill:#f9df5d"/><path d="M178,316v35a14,14,0,0,1-28,0V316a14,14,0,1,1,28,0Z" style="fill:#ee8e3e"/><path d="M164,402h25a54.56,54.56,0,0,0,54.5-54.5v-30A54.56,54.56,0,0,0,189,263H164a54.56,54.56,0,0,0-54.5,54.5v30A54.56,54.56,0,0,0,164,402Zm64.5-84.5v30a39.56,39.56,0,0,1-23.86,36.27A54.31,54.31,0,0,0,218.5,347.5v-30a54.31,54.31,0,0,0-13.86-36.27A39.56,39.56,0,0,1,228.5,317.5Zm-104,0a39.5,39.5,0,0,1,79,0v30a39.5,39.5,0,0,1-79,0Z"/><path d="M164,372.5A21.53,21.53,0,0,0,185.5,351V316a21.5,21.5,0,0,0-43,0v35A21.53,21.53,0,0,0,164,372.5ZM157.5,316a6.5,6.5,0,0,1,13,0v35a6.5,6.5,0,0,1-13,0Z"/></g></svg> et ses amis pour quelques courses sympa ! J'ai également découvert The Witcher 3 (OUI, OUI, sur Switch ! <span class="text-italic text-sm">Pas taper</span>) avec toutes ses extensions qui sont excellentes ! Et occasionnellement, un peu de Rocket League, Animal Crossing ou Story of Season pour la détente... Et bien d'autres encore mais la liste serait longue !</p>
+                    </div>
+                </div>
+                <div class="md:mr-8 w-full md:w-4/5 flex flex-col mt-3">
+                    <button class="hover:bg-yellow-500 w-full flex justify-between items-center bg-blueHeader text-white text-xl text-right p-3 rounded-md" id="travel">
+                        <svg fill="currentColor" class="inline-block h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M20 18v2h-20v-2h20zm-19.989-6.426l2.624-1.5 4.765 1.815s9.197-5.519 11.773-7.038c2.226-1.312 4.268-.853 4.647-.216.448.753.131 2.366-2.576 4.09-2.166 1.38-9.233 5.855-9.233 5.855-4.969 2.708-7.565.657-7.565.657l-4.435-3.663zm5.587-6.621l-2.598 1.5 6.252 3.173 5.388-3.227-9.042-1.446z"/></svg>
+                        Les voyages
+                    </button>
+                    <div class="flex flex-col my-5 hidden" id="text-travel">
+                        <h1 class="font-bold text-center text-green-800 text-xl md:text-3xl">La tête dans les nuages...</h1>
+                        <p class="text-justify">Qui ne rêve pas de voir le monde ? En tout cas, moi, j'en rêve ! J'ai la chance d'avoir à la maison, la personne qui partage ma vie, qui partage aussi mon rêve, alors on s'est crée une petite liste d'un top destinations qu'on aimerait faire avant tout !</p>
+                        <p class="text-justify">J'avoue que pour ma part, je voue un culte au Japon, je rêve d'aller y passer quelques mois pour découvrir le pays de haut en bas, participer aux festivals, aux événements ect... mais bien sûr, je ne rêve pas que du Japon ! Il y a tellement d'endroits que je voudrais voir... L'Irlande, l'Amérique, le Canada, l'Australie... Oui, en bref, je veux voir le monde.</p>
+                    </div>
+                </div>
+                <div class="md:mr-8 w-full md:w-4/5 flex flex-col mt-3">
+                    <button class="hover:bg-yellow-500 w-full flex justify-between items-center bg-blueHeader text-white text-xl text-right p-3 rounded-md" id="music">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-6" viewBox="0 0 24 24"><path d="M24 20.682c-.002 1.555-1.17 2.318-2.24 2.318-.903 0-1.76-.544-1.76-1.616 0-1.104 1.201-2.118 2.515-2.118.161 0 .323.015.485.047v-4.312l-6 1.229v5.45c-.002 1.556-1.18 2.32-2.258 2.32-.906 0-1.742-.542-1.742-1.61 0-1.106 1.201-2.125 2.518-2.125.16 0 .322.015.484.047v-6.52l7.998-1.792v8.682zm-13-6.682c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm0-1c1.103 0 2-.897 2-2s-.897-2-2-2-2 .897-2 2 .897 2 2 2zm-1.818 2.646c-1.293-.508-2.319-1.534-2.827-2.827l-1.025.128c.6 1.746 1.979 3.125 3.725 3.724l.127-1.025zm-4.869-2.572l-1 .125c.757 2.648 2.84 4.731 5.488 5.488l.125-1c-2.194-.683-3.93-2.418-4.613-4.613zm8.505-6.72c1.293.508 2.319 1.534 2.827 2.828l1.025-.128c-.6-1.746-1.979-3.125-3.725-3.725l-.127 1.025zm-1.771 15.644c.082-.734.378-1.441.878-2.045-.304.03-.613.047-.925.047-4.963 0-9-4.038-9-9s4.037-9 9-9c4.912 0 8.91 3.957 8.992 8.849l1.978-.443c-.311-5.798-5.096-10.406-10.97-10.406-6.075 0-11 4.925-11 11s4.925 11 11 11l.047-.002zm2.151-18.685l-.125 1c2.195.682 3.931 2.418 4.613 4.613l1-.125c-.755-2.648-2.838-4.732-5.488-5.488z"/></svg>
+                        La musique
+                    </button>
+                    <div class="flex flex-col my-5 hidden" id="text-music">
+                        <h1 class="text-green-800 text-center text-xl md:text-3xl font-bold">Le casque sur les oreilles, un accessoire indispensable</h1>
+                        <p class="text-justify">Je ne sais pas vous, mais moi je ne peux pas commencer la journée sans musique ! Je ne pratique pas forcément la musique, ma passion vient plutôt des groupes qui la pratiquent (et d'une jalousie immense parce que oui, j'aurais aimé jouer d'un instrument !), je ne peux pas m'imaginer passer une journée sans musique, c'est même plutôt rare que ça soit le cas. Ce que j'écoute ? J'avoue que j'ai des goûts assez variés MAIS, le style de musique que j'écoute le plus ça serait le rock alternatif / pop rock. D'ailleurs, mes groupes préférés et indispensables sont : Muse, Three Days Grace, The Red Hot Chili Peppers et The Avener.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-14 mx-auto">
+        <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat" id="compet">Mes compétences</h1>
+        <section class="mt-16 flex flex-col space-y-12 xl:space-y-0">
+            <div>
+                <img class="w-80" src="./img/Drap_Depart.png" alt="Drapeau départ des Compétences">
+            </div>
+            <div class="flex justify-center">
+                <svg class="w-80 h-80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730.7 609.32"><g id="Calque_1" data-name="Calque 1"><rect x="48.76" y="19.57" width="16.51" height="284.82" rx="8.25" style="fill:#0a2d4c"/><circle cx="57.02" cy="14.52" r="14.52" style="fill:#0a2d4c"/><polygon points="189.84 104.86 57.02 34.85 57.02 174.87 189.84 104.86" style="fill:#0a2d4c"/><text transform="translate(77.01 134.53)" style="font-size:87.71106719970703px;fill:#fbb03b;font-family:MyriadPro-Regular, Myriad Pro">1</text><ellipse cx="57.48" cy="325.26" rx="57.48" ry="3.67" style="opacity:0.17"/><path d="M810.07,505c0,.61,0,1.23-.05,1.83H713.81c0-.6,0-1.22,0-1.83,0-22,21.56-39.9,48.15-39.9S810.07,483,810.07,505Z" transform="translate(-704.9 -181.56)" style="fill:#0a2d4c"/></g>
+                    <g id="HTML" class="transition duration-100 ease-in-out transform hover:-translate-y-1 hover:scale-105"><ellipse cx="297.78" cy="453.4" rx="149.5" ry="155.92" style="fill:#d8c13d"/><circle cx="297.78" cy="459.82" r="149.5" style="fill:#edd83e"/><circle cx="297.78" cy="459.82" r="124.74" style="fill:#c1ad34"/><text transform="translate(213.4 485.7)" style="font-size:69.2159423828125px;fill:#fff;font-family:MyriadPro-Regular, Myriad Pro">HTML</text></g>
+                    <g id="CSS" class="transition duration-100 ease-in-out transform hover:-translate-y-12"><ellipse cx="560.56" cy="251.18" rx="149.5" ry="147.19" style="fill:#d8c13d"/><circle cx="581.2" cy="252.08" r="149.5" style="fill:#edd83e"/><circle cx="581.2" cy="252.08" r="124.74" style="fill:#c1ad34"/><text transform="matrix(0.99, -0.1, 0.1, 0.99, 531.1, 283.59)" style="font-size:69.2159423828125px;fill:#fff;font-family:MyriadPro-Regular, Myriad Pro">CSS</text></g>
+                </svg>
+            </div>
+            <div class="flex justify-center xl:justify-end mt-4">
+                <img class="w-97" src="./img/Bootstrap_JS.png" alt="Compétences Bootstrap JS">
+            </div>
+            <div class="flex justify-center mt-4">
+                <img class="w-97" src="./img/Checkpoint3.png" alt="compétences Tailwind CSS SEO UX/UI">
+            </div>
+            <div class="flex justify-center xl:justify-start mt-4">
+                <img class="w-97" src="./img/Drap_Alternance.png" alt="drapeau fin Alternance">
+            </div>
+        </section>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-14 mx-auto">
+        <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat">Mes projets réalisés</h1>
+        <section class="mt-16 grid lg:grid-cols-2 xl:grid-cols-3 place-items-center md:gap-x-4 gap-y-4 xl:gap-y-0 text-blueHeader" id="projets">
+            <div class="border border-blueHeader rounded-md flex flex-col w-80 md:w-96 h-98 shadow-lg">
+                <div>
+                    <img class="object-cover rounded-md" src="./img/Japan_Road.png" alt="Projet Japan Road">
+                </div>
+                <div class="h-full relative p-4 text-center" id="cardOne">
+                    <hr class="w-3/5 border-t-2 border-blueHeader my-3 mx-auto">
+                    <h1 class="text-2xl font-bold">Japan Road</h1>
+                    <p class="mt-3">Japan Road est un projet personnel et fictif.</p>
+                    <p>Je suis une grande passionnée du Japon et c'est l'une de mes destinations que je rêve de faire, ce site est un peu comme un blog voyage qui référencie tous les endroits extraordinaire que l'on peut visiter au Japon.</p>
+                    <p class="font-bold mt-3">Réalisé avec : Wordpress</p>
+                    <div class="absolute bottom-2 inset-x-0">
+                        <button class="bg-blueHeader px-2.5 py-1.5 rounded-md text-white hover:bg-green-800">Bientôt en ligne</button>
+                    </div>
+                </div>
+            </div>        
+            <div class="border border-blueHeader rounded-md flex flex-col w-80 md:w-96 h-98 shadow-lg" id="cardTwo">
+                <div>
+                    <img class="object-cover rounded-t-md" src="./img/Maestro_Accueil.png" alt="Projet Maestro">
+                </div>
+                <div class="h-full relative p-4 text-center">
+                    <hr class="w-3/5 border-t-2 border-blueHeader my-3 mx-auto">
+                    <h1 class="text-2xl font-bold text-blueHeader">Maestro - Projet de Groupe</h1>
+                    <p class="mt-3">Maestro est un projet réalisé lors de ma formation, nous devions réalisé le site internet d'une application mobile concernant la musique. L'application mobile permettait aux personnes de tout âge de s'entraîner au chant en ayant accès à des partitions d'artistes indépendant ainsi que des cours avec des professeurs particulier tout ceci à petit prix. Mon rôle dans ce projet a été l'intégration de la maquette de la page d'Accueil.</p>
+                    <p class="font-bold mt-3">Réalisé en : HTML / CSS / Bootstrap</p>
+                    <div class="absolute bottom-2 inset-x-0">
+                        <button class="bg-blueHeader px-2.5 py-1.5 rounded-md text-white hover:bg-green-800">Bientôt en ligne</button>
+                    </div>
+                </div>
+            </div>          
+            <div class="border border-blueHeader rounded-md flex flex-col w-80 md:w-96 h-98 shadow-lg" id="cardThree">
+                <div>
+                    <img class="object-cover rounded-t-md" src="./img/Toundrafol.png" alt="Projet Toundrafol">
+                </div>
+                <div class="h-full relative p-4 text-center">
+                    <hr class="w-3/5 border-t-2 border-blueHeader my-3 mx-auto">
+                    <h1 class="text-2xl font-bold text-blueHeader">Stage - Toundrafol</h1>
+                    <p class="mt-3">Toundrafol est un site e-commerce pour artistes indépendant français souhaitant vendre ses créations sur une plateforme leur étant dédiée. Le site s'adresse également à toutes personnes ayant un intérêt pour l'illustration, l'art de manière générale et souhaitant acquérir des oeuvres unique ou en édition limitée. Mon rôle a été de m'occuper de la partie front en intégrant la maquette réalisée les premières semaines.</p>
+                    <p class="font-bold mt-3">Réalisé avec : HTML / CSS / Tailwind CSS / Javascript / Laravel</p>
+                    <div class="absolute bottom-2 inset-x-0">
+                        <button class="bg-blueHeader px-2.5 py-1.5 rounded-md text-white hover:bg-green-800">Bientôt en ligne</button>
+                    </div>
+                </div>
+            </div>           
+        </section>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-14 mx-auto">
+        <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat">Illustrator & Photoshop</h1>
+        <section class="mt-12 flex flex-col items-center" id="caroussel">
+            <div class="flex flex-col items-center">
+                <img class="w-97 cursor-pointer myImages hover:opacity-70" src="./img/Geisha.png" alt="Projet Illustrator Japon Geisha" id="illustratorOne">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-6 mt-4">
+                    <img class="object-cover w-52 h-28.5 cursor-pointer" src="./img/Months.png" alt="Projet Illustrator Montagne" id="illustratorTwo">
+                    <img class="object-cover w-52 h-28.5 cursor-pointer" src="./img/paysage.png" alt="Projet Illustrator Paysage" id="illustratorThree">
+                    <img class="object-cover w-52 h-28.5 cursor-pointer" src="./img/Space.png" alt="Projet Illustrator Espace" id="illustratorFour">                 
+                </div>
+            </div>
+            <div class="flex flex-col items-center my-20">
+                    <img class="object-cover w-97 md:h-96.5 cursor-pointer myImages hover:opacity-70" src="./img/Couv_Portfolio.png" alt="Projet Photoshop Montage photo road amérique voiture" id="imageOne">
+                <div class="grid md:grid-cols-2 gap-6 mt-4">
+                    <img class="object-cover w-52 h-36 cursor-pointer" src="./img/Japon.jpg" alt="Projet Photoshop Montage photo Japon" id="littleOne">
+                    <img class="object-cover w-52 h-36 cursor-pointer" src="./img/Baby_Hat.jpg" alt="Projet Photoshop photo montage bébé chapeau" id="littleTwo">    
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+        </section>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-14 mx-auto">
+        <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat">Maquette Adobe XD</h1>
+        <section class="mt-12 mb-8 grid xl:grid-cols-3 text-blueHeader space-y-10 xl:space-y-0 xl:space-x-10" id="adobeXD">
+            <div class="flex flex-col items-center md:h-97 border border-blueHeader shadow-md p-4 rounded-md">
+                <div class="flex items-center h-64">
+                    <img class="w-80" src="./img/CM.png" alt="Logo Cuisine du Monde maquette adobe XD lien interactif">
+                </div>  
+                <h3 class="font-bold text-xl text-center">Maquette Cuisine du Monde</h3>
+                <p class="mt-3 mb-10 h-48 text-justify">Cuisine du monde a été ma première maquette réalisée sur Adobe XD lors de ma formation de Webdesigner, celle-ci présente une application mobile d'un site de cuisine où l'on peut poster ses recettes, voir celle des autres utilisateurs, les noter, commenter ect... J'ai également réalisé le logo sur Illustrator.</p>
+                <a class="hover:text-green-800" href="https://xd.adobe.com/embed/a12b6efb-0c60-42e5-bdd2-468ec0f6d02d-f478/?fullscreen&hints=off"><span class="bg-blueHeader text-white font-bold text-lg text-center p-3 rounded-md hover:text-red-400">Lien</span></a>
+            </div>
+            <div class="flex flex-col items-center md:h-97 border border-blueHeader shadow-md p-4 rounded-md">
+                <div class="flex items-center h-64">
+                    <img class="w-80" src="./img/ecotrek_logo.png" alt="Logo Ecotrek maquette adobe XD lien interactif">
+                </div>   
+                <h3 class="font-bold text-xl text-center">Maquette Ecotrek</h3>
+                <p class="mt-3 mb-10 md:h-48 text-justify">Ecotrek est une application web pour un site qui souhaite vendre des trekking, il a été réalisé durant ma formation de Webdesigner, ceci est un projet fictif. Le client souhaitait mettre l'accent sur son côté écologique, sur la nature et sur quelque chose de chaleureux car la plus part des trekking étaient à faire en groupe. C'était un travail de groupe, nous étions deux, mon binôme devait réaliser l'application mobile et il a aussi réalisé le logo. Je me suis occupée de la maquette web.</p>
+                <a class="hover:text-green-800" href="https://xd.adobe.com/view/583ae6e5-ced6-4d48-8474-013dfb4a3cc3-0d69/?fullscreen&hints=off"><span class="bg-blueHeader text-white font-bold text-lg text-center p-3 rounded-md hover:text-red-400">Lien</span></a>
+            </div>
+            <div class="flex flex-col items-center md:h-97 border border-blueHeader shadow-md p-4 rounded-md">
+                <div class="flex items-center h-64">
+                    <img class="w-80" src="./img/Logo_Toundra.png" alt="Logo Toundrafol maquette adobe XD lien interactif">
+                </div>   
+                <h3 class="font-bold text-xl text-center">Maquette Toundrafol</h3>
+                <p class="mt-3 mb-10 h-48 text-justify">Lors de mon stage en entreprise, j'ai dû réalisé la maquette du site Toundrafol avant de pouvoir l'intégrer ensuite en HTML/CSS/Tailwind CSS.Le client souhaitait un site épuré, simple d'utilisation pour les clients et les créateurs.</p>
+                <a href="https://xd.adobe.com/view/cef43831-67b9-4693-a998-608203640acf-9ba7/?fullscreen&hints=off"><span class="bg-blueHeader text-white font-bold text-lg text-center p-3 rounded-md hover:text-red-400">Lien</span></a>
+            </div>
+        </section>
+        <hr class="w-4/5 border-t-2 border-blueHeader mt-14 mx-auto">
+        <h1 class="text-3xl md:text-6xl text-red-400 mt-12 text-center font-caveat">Contact</h1>
+        <section class="mt-8 flex flex-col items-center text-blueHeader" id="contact">
+            <div id="success" class="text-green-800 hidden mb-6">Votre email a bien été envoyé !</div>
+            <div id="failed" class="text-red-800 hidden mb-6">Une erreur s'est produite. Veuillez vérifier que tous les champs soient correctement remplit.</div>
+            <form class="w-full lg:w-3/5 flex flex-col space-y-6" id="myForm">
+                <div class="w-full flex flex-col">
+                    <label for="name">Nom & Prénom</label>
+                    <input type="text" id="name" class="w-full border border-blueHeader rounded-md p-1 focus:outline-none focus:border-indigo-500" placeholder="Entrer votre nom et prénom" required>
+                </div>
+                <div class="w-full flex flex-col">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="w-full border border-blueHeader rounded-md p-1 focus:outline-none focus:border-indigo-500" placeholder="Entrer votre email" required>
+                </div>
+                <div class="w-full flex flex-col">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" class="w-full border border-blueHeader rounded-md p-1 focus:outline-none focus:border-indigo-500" placeholder="Quel est l'objet de votre message ?" required>
+                </div>
+                <div class="w-full flex flex-col">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="h-44 border border-blueHeader rounded-md p-1 focus:outline-none focus:border-indigo-500" placeholder="Entrez votre message ici" required></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blueHeader p-2 text-white rounded-md hover:bg-green-800" id="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="fixed bottom-4 right-10 w-8 right-0" id="buttonTop">
+        <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-900 opacity-50 h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
+    <footer class="w-full bg-blueHeader grid xl:grid-cols-3 place-items-center p-5 text-white space-y-6 xl:space-y-0">
+        <div class="flex flex-col text-center">
+            <p>Manon Michas </p>
+            <p>Habite Castanet-Tolosan, 31320</p>
+        </div>
+        <div class="flex flex-col text-center">
+            <p class="font-bold text-lg">Contact :</p>
+            <p>0781885675</p>
+            <p>manon.michas@gmail.com</p>
+        </div>
+        <div class="flex flex-col text-center">
+            <p class="font-bold text-lg">Réseaux sociaux</p>
+            <div class="flex flex-row justify-center space-x-6 mt-3">
+                <a class="transition duration-100 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="https://www.linkedin.com/in/manon-michas-m31320-toulouse/">
+                    <svg fill="currentColor" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
+                </a>
+                <a class="transition duration-100 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="https://github.com/Manon-M">
+                    <svg fill="currentColor" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/></svg>
+                </a>       
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JS/app.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script> 
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_3g1HEWFDvqbWfscACxdI5");
+        })();
+    </script>
+</body>
+</html>
