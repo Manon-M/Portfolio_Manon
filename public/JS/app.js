@@ -230,4 +230,16 @@ buttonsubmit.addEventListener('click', (e)=>{
     }
 })
     
+//
 
+let whoIsThis = document.getElementById('whoIsThis');
+let artist = document.getElementById('artist');
+
+whoIsThis.addEventListener('click', ()=>{
+    if(artist.classList.contains('hidden')){
+        artist.classList.remove('hidden')
+    }
+    else{
+        artist.classList.add('hidden')
+    }
+})

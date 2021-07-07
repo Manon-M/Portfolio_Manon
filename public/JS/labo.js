@@ -185,7 +185,7 @@ const listKeyCode = inputs.map(input => input.dataset.key);
 const result = document.querySelector('#result');
 
 document.addEventListener('keydown', (e) =>{
-    const valeur = e.keyCode.toString();
+    const valeur = e.code.toString();
     calculer(valeur);
 })
 

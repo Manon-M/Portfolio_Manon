@@ -778,11 +778,11 @@ video {
 .w-32{
 	width: 8rem;
 }
-.w-6{
-	width: 1.5rem;
-}
 .w-9{
 	width: 2.25rem;
+}
+.w-6{
+	width: 1.5rem;
 }
 .w-80{
 	width: 20rem;
@@ -799,11 +799,11 @@ video {
 .transform{
 	transform: var(--tw-transform);
 }
-.cursor-default{
-	cursor: default;
-}
 .cursor-pointer{
 	cursor: pointer;
+}
+.cursor-default{
+	cursor: default;
 }
 .grid-cols-3{
 	grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -915,6 +915,12 @@ video {
 .p-4{
 	padding: 1rem;
 }
+.p-0\.5{
+	padding: 0.125rem;
+}
+.p-0{
+	padding: 0px;
+}
 .p-3{
 	padding: 0.75rem;
 }
@@ -923,9 +929,6 @@ video {
 }
 .p-2{
 	padding: 0.5rem;
-}
-.p-0{
-	padding: 0px;
 }
 .px-2\.5{
 	padding-left: 0.625rem;
@@ -980,6 +983,9 @@ video {
 }
 .font-bold{
 	font-weight: 700;
+}
+.italic{
+	font-style: italic;
 }
 .text-white{
 	--tw-text-opacity: 1;
@@ -1331,6 +1337,10 @@ video {
 		width: 80%;
 	}
 
+	.md\:w-96\.5{
+		width: 400px;
+	}
+
 	.md\:w-96{
 		width: 24rem;
 	}
@@ -1401,6 +1411,18 @@ video {
 
 	.xl\:static{
 		position: static;
+	}
+
+	.xl\:absolute{
+		position: absolute;
+	}
+
+	.xl\:top-5{
+		top: 1.25rem;
+	}
+
+	.xl\:left-16{
+		left: 4rem;
 	}
 
 	.xl\:col-span-1{
